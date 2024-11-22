@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap'); 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e8f4f8; 
+  color: #333; 
+  font-family: 'Roboto', sans-serif; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h3 {
+  color: rgb(100, 149, 237);
+  font-size: 9rem; 
+  text-align: center;
+  opacity: 0.5; 
+}
+
+form {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); 
+  max-width: 100%;
+  width: 450px; 
+  background-color: #ffffff; 
+  border-radius: 8px; 
+}
+
+.input {
+  border: 1px solid #dce4e8;
+  border-radius: 4px; 
+  color: #333; 
+  font-size: 1.8rem; 
+  padding: 1rem 1.5rem;
+  display: block;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: #a1a1a1; 
+}
+
+.input:focus {
+  outline-color: rgb(100, 149, 237); 
+  border-color: rgb(100, 149, 237); 
+}
+
+.todos {
+  background-color: #f9fafb; 
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  border-radius: 8px; 
+  overflow: hidden; 
+}
+
+.todos li {
+  border-top: 1px solid #dce4e8; 
+  cursor: pointer;
+  font-size: 1.6rem; 
+  padding: 1rem 2rem;
+  transition: background-color 0.3s ease; 
+}
+
+.todos li:hover {
+  background-color: #eef5f8; 
+}
+
+.todos li.completed {
+  color: #909090; 
+  text-decoration: line-through;
+}
+
+small {
+  color: #a5a5a5; 
+  margin-top: 3rem;
+  text-align: center;
+  font-weight: 300; 
+}
